@@ -12,12 +12,13 @@
 <body>
 
     <header>
-        <div class="login">
-            <svg xmlns="http://www.w3.org/2000/svg" width="75" height="90" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+        <div class="card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="78" height="90" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                 <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-              </svg>
-            <a href="#" class="user">Usuario</a>
+            </svg>
+            <a href="#" class="user a">Usuario</a>
+            <a href="#" class="user b">Cerrar Sesión</a>
         </div>
         <div class="menu">
             <ul class="nav home">
@@ -60,10 +61,7 @@
 
 <main>
     
-    <div class="edit">
-        <h1>Listado de Materiales</h1>
-        <a href="#" class="modif">Modificar tabla</a>
-    </div>
+    <h1>Listado de Materiales</h1>
     <table id="myTable" class="display">
         <thead>
             <tr>
@@ -73,6 +71,7 @@
                 <th>Age</th>
                 <th>Start date</th>
                 <th>Salary</th>
+                <th>Alterar</th>
             </tr>
         </thead>
         <tbody>
@@ -83,6 +82,7 @@
                 <td>61</td>
                 <td>2011-04-25</td>
                 <td>$320,800</td>
+                <td><button class="modif">Modificar Tabla</button></td>
             </tr>
             <tr>
                 <td>Garrett Winters</td>
@@ -91,6 +91,7 @@
                 <td>63</td>
                 <td>2011-07-25</td>
                 <td>$170,750</td>
+                <td><button class="modif">Modificar Tabla</button></td>
             </tr>
             <tr>
                 <td>Ashton Cox</td>
@@ -99,6 +100,7 @@
                 <td>66</td>
                 <td>2009-01-12</td>
                 <td>$86,000</td>
+                <td><button class="modif">Modificar Tabla</button></td>
             </tr>
             <tr>
                 <td>Cedric Kelly</td>
@@ -107,6 +109,7 @@
                 <td>22</td>
                 <td>2012-03-29</td>
                 <td>$433,060</td>
+                <td><button class="modif">Modificar Tabla</button></td>
             </tr>
             <tr>
                 <td>Airi Satou</td>
@@ -115,6 +118,7 @@
                 <td>33</td>
                 <td>2008-11-28</td>
                 <td>$162,700</td>
+                <td><button class="modif">Modificar Tabla</button></td>
             </tr>
         </tbody>
         <tfoot>
@@ -125,10 +129,12 @@
                 <th>Age</th>
                 <th>Start date</th>
                 <th>Salary</th>
+                <th>Alterar</th>
             </tr>
         </tfoot>
     </table>
 
+    <a href="#" class="modif">Modificar tabla</a>
 </main>
 
 
@@ -138,7 +144,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-    <script src="/js/index.js"></script>  <!-- colocas tu archivo js -->
+    <script src="/js/index.js"></script> 
     
 </body>
 </html>

@@ -30,11 +30,14 @@ li {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition-duration: 0.3s;
     overflow: hidden;
-    margin: 35px 9px; 
 }
  
+.nav {
+    transition-duration: 0.3s;
+    margin: 35px 9px; 
+}
+
 .IconContainer {
     color: black;
     width: 30px;
@@ -93,12 +96,13 @@ main {
     width: 100%;
 }
 
-.login {
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 50px 0;
+    margin: 50px 0 35px;
+    border-bottom: white;
 }
 
 .bi.bi-person-circle, .user {
@@ -107,17 +111,19 @@ main {
 }
 
 .bi.bi-person-circle {
-    margin-bottom: 33px;
+    margin-bottom: 42px;
 }
 
 .user {
     text-decoration: none;
     font-size: 1.05em;
+    margin: 14px 9px; 
 }
 
+
+
 .modif {
-    /* position: fixed; */
-    display: flex;
+    display: none; /* El botón está oculto inicialmente */
     left: 220px;
     right: 200px;
     text-decoration: none;
@@ -130,6 +136,10 @@ main {
     align-items: center;
     justify-content: center;
     margin: 5px 0;
+}
+
+.show-btn {
+    display: inline-block;
 }
 
 .edit {
